@@ -45,7 +45,8 @@ const corsOptions = {
     'http://localhost:5174', 
     'http://localhost:5175', 
     'http://localhost:5176', 
-    process.env.DOMAIN || 'http://localhost:5173'
+    process.env.DOMAIN || 'http://localhost:5173',
+    'https://tf-frontend-1uq3.vercel.app/'
   ], 
   credentials: true 
 };
