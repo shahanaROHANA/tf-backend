@@ -24,8 +24,8 @@ import {
   login, 
   forgetPassword, 
   resetPassword, 
-  googleAuth, 
-  googleAuthCallback,
+  // googleAuth, 
+  // googleAuthCallback,
   verifyToken 
 } from '../controllers/authController.js';
 
@@ -48,11 +48,11 @@ router.post('/reset-password', authLimiter, resetPassword);
 router.get('/verify', protect, verifyToken);
 
 // Google OAuth routes
-router.get('/google', googleAuth);
-router.get(
-  '/google/callback',
-  passport.authenticate('google', { session: false }),
-  googleAuthCallback
-);
+// router.get('/google', googleAuth);
+// router.get(
+//   '/google/callback',
+//   passport.authenticate('google', { session: false }),
+//   googleAuthCallback
+// );
 
 export default router;
